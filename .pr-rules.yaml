@@ -1,0 +1,17 @@
+jira:
+  required: true
+  pattern: "JIRA-[0-9]+"
+
+branch:
+  pattern: "^(feature|bugfix|hotfix)/JIRA-[0-9]+-.*"
+
+commit:
+  pattern: "^JIRA-[0-9]+:.*"
+
+coverage:
+  minimum: 70
+
+security:
+  block_severity:
+    - HIGH
+    - CRITICAL
